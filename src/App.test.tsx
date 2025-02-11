@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 describe("App", () => {
 	it("renders with the correct label", () => {
-		render(<Button label="Click me2" />);
+		render(<Button label="Click me" />);
 		const buttonElement = screen.getByText(/Click me/i);
 		expect(buttonElement).toBeInTheDocument();
 	});
@@ -17,7 +17,7 @@ describe("App", () => {
 		expect(heading).toBeInTheDocument();
 
 		// Check if the button with label "Click me" is in the document
-		const button = screen.getByText(/Click me/i);
+		const button = screen.getByText(/Click me2/i);
 		expect(button).toBeInTheDocument();
 	});
 });
