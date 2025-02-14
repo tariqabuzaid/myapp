@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
-import { Button } from "./Button";
+import { Button } from "./components/Button";
 
 describe("App", () => {
 	it("renders with the correct label", () => {
