@@ -1,5 +1,6 @@
 import { Box, Button, Typography, useTheme } from "@mui/material";
 import "./App.css";
+
 import Page from "./components/Page";
 
 function App() {
