@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
-import { Button } from "./components/Button";
+import { Button } from "@mui/material";
 
 describe("App", () => {
 	it("renders with the correct label", () => {
-		render(<Button label="Click me" />);
+		render(<Button>Click me</Button>);
 		const buttonElement = screen.getByText(/Click me/i);
 		expect(buttonElement).toBeInTheDocument();
 	});
